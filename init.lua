@@ -172,20 +172,3 @@ vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
 
 -- Clipboard support
 vim.cmd("set clipboard+=unnamedplus")
-
---[[
-First, things to intall:
-Better Terminal: Windows Terminal Preview from msft store
-Better shell: Windows powershell (cross platform). Can use winget or chocolatey to install. Set as default shell in terminal.
-Nerd font, download and right click all the files and install it. Go settings in terminal and set nerdfont under appearance
-Install neovim and Git with Scoop or winget or chocolatey.
-Other things to install:
- -ripgrep for telescope
- -Treesitter may have error: No C compliler found. Use chocolatey to install mingw, then refreshenv in terminal.
-For Python:
-nvm for windows, update node version with nvm install latest
-Remember to set python in the PATH environment variables: Start > environment variables or smth > in system variables find PATH and edit > add the location which python is installed. (Move up above microsoft store)
-Same for ipython.
-
-Thats all I remember for now, but I prob forgot some stuff.
---]]
