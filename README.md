@@ -33,13 +33,17 @@ First, things to install:
 - Terminal: Good one is Windows Terminal Preview from msft store
 - Shell: Windows powershell (Powershell Core).
 
-I mainly used Scoop to install the packages. People like Scoop as it installs apps into a single separate directory. Powershell core can be installed using msi installer if you do not want to go through winget.  As much as I wanted to stick to using Scoop, I needed chocolatey to workaround an error with treesitter (written below).
+I mainly used Scoop to install the packages. People like Scoop as it installs apps into a single separate directory. Powershell core can be installed using msi installer if you do not want to go through winget.
 
 - Choose a Nerd font, download and right click all the files and install it. Go to settings in terminal and set to use the nerdfont just downloaded, under appearance
 - Finnally install Git and Neovim <br />
 
 Other things to install:
 - ripgrep for telescope
-- Treesitter may have error: "No C compliler found..." Use chocolatey to install mingw, then refreshenv in terminal.<br />
-
+- Treesitter may have error: "No C compliler found..." Use scoop/chocolatey to install mingw, then refreshenv in terminal.<br />
+- When installing pyright with Mason (which this config does), you will have to intall/update node.js to version 20. This does not come natively on windows computers. To do this, install nvm-windows then run the following code to update node
+```
+nvm install latest
+nvm use 22.1.0  #or watever version you downloaded
+```
 Thats all I remember for now, but I probably forgot some stuff.
