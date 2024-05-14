@@ -31,12 +31,12 @@ The config file is  messy and unformatted, though I will most definitely be modi
 If you are interested in installing Neovim, heres the things I had to do to get it running on Windows: <br /><br />
 First, things to install:
 - Terminal: Good one is Windows Terminal Preview from msft store
-- Shell: Windows powershell (cross platform).
+- Shell: Windows powershell (Powershell Core).
 
-I used 3 different package managers: Winget, Chocolatey and Scoop. People like Scoop as it installs apps into a single separate directory. As much as I wanted to stick to using Scoop, I realised some things which I needed are only available in certain package managers. I should look at optimising this in the future.
+I mainly used Scoop to install the packages. People like Scoop as it installs apps into a single separate directory. Powershell core can be installed using msi installer if you do not want to go through winget.  As much as I wanted to stick to using Scoop, I needed chocolatey to workaround an error with treesitter (written below).
 
 - Choose a Nerd font, download and right click all the files and install it. Go to settings in terminal and set to use the nerdfont just downloaded, under appearance
-- Finnally install Neovim and Git<br />
+- Finnally install Git and Neovim <br />
 
 Other things to install:
 - ripgrep for telescope
