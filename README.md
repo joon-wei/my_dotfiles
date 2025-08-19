@@ -46,4 +46,10 @@ Other things to install:
 nvm install latest
 nvm use 22.1.0  #or watever version you downloaded
 ```
+On Linux, this is much easier solved by doing a:
+```
+sudo apt update
+sudo apt install nodejs npm
+```
+
 Thats all I remember for now, but I probably forgot some stuff.
