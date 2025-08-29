@@ -1,0 +1,33 @@
+// layout.kdl
+layout {
+    new_tab_template {
+	pane size=1 borderless=true {
+	    plugin location="zellij:tab-bar"
+	}
+	pane
+	pane size=1 borderless=true {
+	    plugin location="zellij:status-bar"
+	}
+     }
+    tab name="My layout" {
+    	 pane size=1 borderless=true{
+    	plugin location="zellij:tab-bar"
+    	 }
+    	 pane split_direction="vertical" {
+    	pane split_direction="horizontal" size="45%"{
+    		 pane command="bpytop"
+    		 pane
+    	}
+    	pane split_direction="horizontal" size="55%"{
+    		 pane {
+    		command "ticker"
+    		args "--config" "/home/flrrub/ticker.yaml"
+    		 }
+    		 pane command="yazi" size="45%"
+    	}
+    	 }
+    	 pane size=1 borderless=true{
+    	plugin location="zellij:status-bar"
+    	 }
+    }
+}

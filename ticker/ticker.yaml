@@ -1,0 +1,43 @@
+# ~/.ticker.yaml
+show-summary: true
+show-tags: true
+show-fundamentals: true
+show-separator: true
+show-holdings: true
+interval: 5
+currency: USD
+currency-summary-only: false
+watchlist:
+  - .SPX
+  - SPY
+
+lots: 
+  - symbol: "VOO"
+    quantity: 29.0
+    unit_cost: 499.75
+  - symbol: "QQQ"
+    quantity: 7.0
+    unit_cost: 552.78
+  - symbol: "TQQQ"
+    quantity: 82.0
+    unit_cost: 69.66
+  - symbol: "TSM"
+    quantity: 14.0
+    unit_cost: 102.74
+  - symbol: "AAPL"
+    quantity: 24.0
+    unit_cost: 134.25
+  - symbol: "AMD"
+    quantity: 5.0
+    unit_cost: 87.5
+  - symbol: "INTC"
+    quantity: 18.0
+    unit_cost: 56.22
+  
+groups:
+  - name: crypto
+    watchlist:
+      - BTC-USD
+      - ETH-USD
+      - SOL-USD
+
